@@ -1,10 +1,10 @@
 # @softkit/strapi-plugin-populate-deep
-This plugin allows for easier population of deep content structures using the rest API.
+
+Strapi v5 plugin that populates nested content structures using the REST API.
 
 # Installation
 
 `pnpm add @softkit/strapi-plugin-populate-deep`
-
 
 # Usages
 
@@ -14,11 +14,11 @@ Populate a request with the default max depth.
 
 `/api/articles?populate=deep`
 
-Populate a request with the a custom depth
+Populate a request with a custom depth.
 
 `/api/articles?populate=deep,10`
 
-Populate a request with the a custom depth
+Populate a single entry with a custom depth.
 
 `/api/articles/1?populate=deep,10`
 
@@ -30,13 +30,13 @@ The populate deep option is available for all collections and single types using
 
 # Configuration
 
-The default depth can be customized via the plugin config. To do so create or edit you plugins.js file.
+The default depth can be customized via the plugin config. To do so create or edit your `config/plugins.js` file.
 
 ## Example configuration
 
 `config/plugins.js`
 
-```
+```js
 module.exports = ({ env }) => ({
   '@softkit/strapi-plugin-populate-deep': {
     config: {
@@ -47,4 +47,7 @@ module.exports = ({ env }) => ({
 ```
 
 # Contributions
-The original idea for getting the populate structure was created by [tomnovotny7](https://github.com/tomnovotny7) and can be found in [this](https://github.com/strapi/strapi/issues/11836) github thread
+
+The original idea for getting the populate structure was created by [tomnovotny7](https://github.com/tomnovotny7) and can be found in [this](https://github.com/strapi/strapi/issues/11836) github thread.
+
+Strapi v5 migration based on work by [NEDDL](https://github.com/NEDDL/strapi-v5-plugin-populate-deep).
