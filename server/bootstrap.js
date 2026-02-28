@@ -1,10 +1,12 @@
 "use strict";
 const { getFullPopulateObject } = require("./helpers");
+const requestContext = require("./request-context");
 
 module.exports = ({ strapi }) => {
   strapi.db.lifecycles.subscribe((event) => {
     if (event.action === "beforeFindMany" || event.action === "beforeFindOne") {
-      const level = event.params?.pLevel;
+      const store = requestContext.getStore();
+      const level = store?.pLevel;
 
       const defaultDepth =
         strapi
