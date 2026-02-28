@@ -1,6 +1,6 @@
 {
   "name": "@softkit/strapi-plugin-populate-deep",
-  "version": "4.9.0",
+  "version": "4.9.1",
   "description": "Strapi plugin that populates nested content.",
   "strapi": {
     "name": "strapi-plugin-populate-deep",

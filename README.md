@@ -12,15 +12,15 @@ Strapi v5 plugin that populates nested content structures using the REST API.
 
 Populate a request with the default max depth.
 
-`/api/articles?populate=deep`
+`/api/articles?pLevel`
 
 Populate a request with a custom depth.
 
-`/api/articles?populate=deep,10`
+`/api/articles?pLevel=10`
 
 Populate a single entry with a custom depth.
 
-`/api/articles/1?populate=deep,10`
+`/api/articles/1?pLevel=10`
 
 ## Good to know
 
