@@ -1,11 +1,9 @@
-# Strapi plugin populate-deep
+# @softkit/strapi-plugin-populate-deep
 This plugin allows for easier population of deep content structures using the rest API.
 
 # Installation
 
-`npm install strapi-plugin-populate-deep`
-
-`yarn add strapi-plugin-populate-deep`
+`pnpm add @softkit/strapi-plugin-populate-deep`
 
 
 # Usages
@@ -40,7 +38,7 @@ The default depth can be customized via the plugin config. To do so create or ed
 
 ```
 module.exports = ({ env }) => ({
-  'strapi-plugin-populate-deep': {
+  '@softkit/strapi-plugin-populate-deep': {
     config: {
       defaultDepth: 3, // Default is 5
     }
